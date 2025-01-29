@@ -1,17 +1,17 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./App.css";
+import Header from "./components/Header.jsx";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Home from "./pages/Home.jsx"; // Import the Home component
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <div className="bg-gradient-to-b ">
-        <h1 className="text-blue-600">My page</h1>
-      </div>
-    </>
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </Router>
   );
 }
 
