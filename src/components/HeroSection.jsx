@@ -11,7 +11,7 @@ const HeroSection = () => {
         // transform: "scaleX(-1)",
       }}
     >
-      <div className="absolute inset-0 bg-black bg-opacity-40 z-10 flex items-center justify-start text-left text-white px-10 sm:px-8 md:px-12">
+      <div className="absolute inset-0 bg-black bg-opacity-40 z-10 flex items-center justify-start text-left text-white px-14 sm:px-10 md:px-16">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold">
           Coffee and community,<br></br>brewed to{" "}
           <span className="font-extrabold">perfection.</span>
